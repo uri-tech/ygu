@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    registry = "192.168.0.61:5555/wordpress-ygu/storage/nfs/registry"
+    registry = "registry:5555/registry/myweb"
     dockerImage = ""
   }
 
