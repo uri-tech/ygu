@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: registry:5555/registry/myweb:1
+      - image: registry:5000/registry/myweb:1
         imagePullPolicy: Always
         name: myweb
 
