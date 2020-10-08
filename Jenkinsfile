@@ -1,5 +1,4 @@
 pipeline {
-  agent any
   environment {
     registry = "registry:5000/registry/myweb"
     dockerImage = ""
