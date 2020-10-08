@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: 10.96.162.143:5000/registry/myweb:latest
+      - image: registry:5000/registry/myweb:latest
         imagePullPolicy: Always
         name: myweb
 
