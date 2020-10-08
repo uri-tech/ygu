@@ -28,7 +28,6 @@ pipeline {
         script {
           docker.withRegistry( "" ) {
             dockerImage.push()
-            dockerImage.push('latest')
           }
         }
       }
