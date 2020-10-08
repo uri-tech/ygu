@@ -27,6 +27,7 @@ pipeline {
       steps{
         script {
           docker.withRegistry( "" ) {
+            dockerImage.push('latest')
             dockerImage.push()
           }
         }
