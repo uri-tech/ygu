@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "registry/myweb"
+    registry = "registry:5000/registry/myweb"
     dockerImage = ""
   }
 
@@ -26,7 +26,7 @@ pipeline {
     stage('Push Image') {
       steps{
         script {
-          docker.withRegistry( 'registry:5000' ) {
+          docker.withRegistry( '' ) {
             dockerImage.push()
             dockerImage.push('latest')
           }
