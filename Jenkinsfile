@@ -26,7 +26,7 @@ pipeline {
     stage('Push Image') {
       steps{
         script {
-          docker.withRegistry( "" , registry:5000) {
+          docker.withRegistry( 'registry:5000' ) {
             dockerImage.push()
             dockerImage.push('latest')
           }
