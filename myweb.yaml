@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: 192.168.0.225:5000/registry/myweb:latest
+      - image: 192.168.0.225:5000/registry/myweb:28
         imagePullPolicy: Always
         name: myweb
 
